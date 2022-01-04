@@ -156,10 +156,33 @@
   </section>
 
   <section class="slide slide--bsa" id="story-pick">
-    <img class="story-pick__img cover" src="./pictures/ash-pick.jpeg" alt="Pokemons">
+    <img class="story-pick__img cover" src="./pictures/ash-pick.png" alt="Pokemons">
+    <img class="story-pick__pokemon story-pick__pokemon--charmander next" width="250" src="./pictures/charmander.png" alt="Charmander">
+    <img class="story-pick__pokemon story-pick__pokemon--bulbasaur next" width="220" src="./pictures/bulbasaur.png" alt="Bulbasaur">
+    <img class="story-pick__pokemon story-pick__pokemon--squirtle next" width="250" src="./pictures/squirtle.png" alt="Squirtle">
     <style>
       #story-pick .story-pick__img {
-        transform: translate(-50%, -50%) scale(1.25);
+        transform: translate(-50%, -50%) scale(1.35);
+      }
+
+      #story-pick .story-pick__pokemon {
+        position: absolute;
+      }
+
+      #story-pick .story-pick__pokemon--charmander {
+        left: 100px;
+        bottom: 80px;
+      }
+
+      #story-pick .story-pick__pokemon--bulbasaur {
+        left: 50%;
+        top: -15px;
+        transform: translateX(-50%);
+      }
+
+      #story-pick .story-pick__pokemon--squirtle {
+        right: 50px;
+        bottom: 70px;
       }
     </style>
   </section>
