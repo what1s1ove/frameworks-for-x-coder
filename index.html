@@ -1,210 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+  <title>Shower Presentation Engine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+
+    .slide--bsa {
+      background-image: url(./pictures/binary-studio-logo.svg), url(./pictures/binary-studio-academy-logo.svg);
+      background-repeat: no-repeat;
+      background-position: right 20px bottom 25px, left 20px bottom 15px;
+      background-size: 75px, 50px;
+    }
+
+    .bottom-link {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+      }
+  </style>
 </head>
 <body class="shower list">
 
-    <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
-    </header>
+  <header class="caption">
+    <h1>Binary Studio Academy</h1>
+    <p>Frameworks for X-coder</p>
+  </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
+  <section class="slide" id="cover">
+    <h2 class="cover__title">Binary Studio Academy</h2>
+    <h3 class="cover__subtitle">Frameworks for X-coder</h3>
+    <p class="cover__desc">🔴 🟢 🔵</p>
+    <p class="copyright right">
+      <a href="https://whatislove.dev/" target="_blank" rel="noreferrer">© Vladyslav Zubko</a>
+    </p>
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
+    <style>
+      #cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </section>
 
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
+  <section class="slide slide--bs" id="hello">
+    <img src="pictures/lapka.svg" width="300" height="300" alt="Lapka">
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
+    <style>
+      #hello {
+        display: grid;
+        place-content: center;
+      }
+    </style>
+  </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
+  <section class="slide" id="who">
+    <h2 class="who__title">Positions</h2>
+    <ul class="who__list">
+      <li class="who__item who__item--full">
+        <a class="who__link" href="https://binary-studio.com/" target="_blank" rel="noreferrer">
+          <img src="pictures/binary-studio-logo.svg" width="300" alt="Binary Studio Logo">
+        </a>
+        Front-End Developer
+      </li>
+      <li class="who__item who__item--half">
+        <a class="who__link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer">
+          <img src="pictures/htmlacademy-logo.svg" width="70" alt="HTML Academy Logo">
+        </a>
+        Mentor / Captain / Interviewer / Author
+      </li>
+      <li class="who__item who__item--half">
+        <a class="who__link" href="https://ligaa.agency/" target="_blank" rel="noreferrer">
+          <img src="pictures/liga-a-logo.svg" width="70" alt="Liga A Logo">
+        </a>
+        Head Mentor
+      </li>
+    </ul>
+    <style>
+      #who .who__title {
+        margin-bottom: 50px;
+      }
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
+      #who .who__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 0;
+      }
 
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
+      #who .who__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
+      }
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
+      #who .who__item--full {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+      }
 
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
+      #who .who__item--half {
+        width: 50%;
+        font-size: 13px;
+      }
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
-    </section>
+      #who .who__item::before {
+        display: none;
+      }
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
+      #who .who__link {
+        background-image: none;
+      }
+    </style>
+  </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
+  <section class="slide slide--bsa" id="disclaimer">
+    <h2 class="disclaimer__title">Disclaimer ⚠️</h2>
+    <p class="disclaimer__desc next">
+      Examples will use JS, but this approach is applicable to any language.
+    </p>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+    <style>
+      #disclaimer .disclaimer__title {
+        margin: 150px 0 0;
+      }
+    </style>
+  </section>
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
+  <section class="slide slide--bsa" id="start">
+    <h2 class="start__title">Let's start with a story...</h2>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+    <style>
+      #start .start__title {
+        margin: 200px 0 0;
+      }
+    </style>
+  </section>
 
-    <div class="progress"></div>
+  <section class="slide slide--bsa" id="story">
+    <img class="story__img cover" src="./pictures/ash.png" alt="Ash">
+    <style>
+      #story .story__img {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    </style>
+  </section>
 
-    <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+  <section class="slide slide--bsa" id="story-pick">
+    <img class="story-pick__img cover" src="./pictures/ash-pick.jpeg" alt="Pokemons">
+    <style>
+      #story-pick .story-pick__img {
+        transform: translate(-50%, -50%) scale(1.25);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="story-pain">
+    <img class="story-pain__img cover" src="./pictures/ash-pain.png" alt="Pokemons">
+    <style>
+      #story-pain .story-pain__img {
+        transform: translate(-50%, -50%) scale(1.35);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="story-happy">
+    <img class="story-happy__img cover" src="./pictures/ash-happy.jpg" alt="Pokemons">
+    <style>
+      #story-happy .story-happy__img {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="story-catch">
+    <img class="story-catch__img cover" src="./pictures/ash-catch.png" alt="Pokemons">
+    <style>
+      #story-catch .story-catch__img {
+        transform: translate(-50%, -50%) scale(2.2);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="thanks">
+    <h2>Thanks 🍒</h2>
+    <style>
+      #thanks {
+        display: grid;
+        place-content: center;
+      }
+    </style>
+  </section>
+
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="node_modules/@shower/core/dist/shower.js"></script>
+  <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
 </html>
