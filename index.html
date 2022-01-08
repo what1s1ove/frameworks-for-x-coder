@@ -126,7 +126,7 @@
   <section class="slide slide--bsa" id="disclaimer">
     <h2 class="disclaimer__title">Disclaimer ⚠️</h2>
     <p class="disclaimer__desc next">
-      Examples will use JS, but this approach is applicable to any language.
+      Examples will use JS, but this approach is <i>applicable</i>* to any language.
     </p>
 
     <style>
@@ -203,6 +203,517 @@
     </style>
   </section>
 
+  <section class="slide slide--bsa" id="framework-choose">
+    <h2 class="framework-choose__title">Choice of technology today</h2>
+    <div class="framework-choose__wrapper next">
+      <img src="./pictures/user.svg" width="100" alt="Person">
+      <div class="framework-choose__arrows-wrapper">
+        <p class="framework-choose__arrow-wrapper">
+          <img class="framework-choose__arrow-image" src="./pictures/arrow.svg" width="30" alt="">
+        </p>
+        <p class="framework-choose__arrow-wrapper framework-choose__arrow-wrapper--true next">
+          <img class="framework-choose__arrow-image" src="./pictures/arrow.svg" width="30" alt="">
+        </p>
+      </div>
+      <p class="framework-choose__frameworks-wrapper">
+        <img class="framework-choose__framework-image" src="./pictures/angular-logo.svg" width="100" alt="Angular">
+        <img class="framework-choose__framework-image" src="./pictures/vue-logo.svg" width="100" alt="Vue">
+        <img class="framework-choose__framework-image" src="./pictures/react-logo.svg" width="100" alt="React">
+      </p>
+    </div>
+
+    <style>
+      #framework-choose .framework-choose__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px 0;
+      }
+
+      #framework-choose .framework-choose__arrows-wrapper {
+        position: relative;
+      }
+
+      #framework-choose .framework-choose__arrow-wrapper {
+        background-color: #ffffff;
+        margin: 0;
+        line-height: 0;
+      }
+
+      #framework-choose .framework-choose__arrow-wrapper--true {
+        top: 0;
+        position: absolute;
+        transform: scale(1, -1);
+      }
+
+      #framework-choose .framework-choose__frameworks-wrapper {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+
+      #framework-choose .framework-choose__framework-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="framework-advantages">
+    <h2 class="framework-advantages__title">Framework-X Advantages</h2>
+    <ul class="framework-advantages__list next">
+      <li class="framework-advantages__item">Super fast</li>
+      <li class="framework-advantages__item next">Super efficient</li>
+      <li class="framework-advantages__item next">Super dev-friendly</li>
+      <li class="framework-advantages__item next">
+        <b>Has an ability to die</b>
+      </li>
+      <li class="framework-advantages__item next">
+        ...
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide slide--bsa" id="trash">
+    <img class="trash__img cover" src="./pictures/clean.jpeg" alt="">
+    <img class="trash__logo trash__logo--backbone next" src="./pictures/backbonejs-logo.svg" width="300" alt="backbone logo">
+    <img class="trash__logo trash__logo--jquery next" src="./pictures/jquery-logo.svg" width="300" alt="jquery logo">
+
+    <style>
+      #trash .trash__img {
+        transform: translate(-50%, -50%) scale(1.3);
+      }
+
+      #trash .trash__logo {
+        position: absolute;
+      }
+
+      #trash .trash__logo--backbone {
+        top: 5%;
+        left: 25%;
+      }
+
+      #trash .trash__logo--jquery {
+        top: 35%;
+        left: 5%;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="web">
+    <h2 class="web__title">Web 🌐</h2>
+    <ul class="web__list next">
+      <li class="web__item web__list--html">HTML</li>
+      <li class="web__item web__list--css next">CSS</li>
+      <li class="web__item web__list--js next">JS</li>
+    </ul>
+    <p class="web__ps next">
+      <b>PS.</b> <img src="./pictures/webassembly-logo.svg" width="30" alt=""> WebAssembly
+    </p>
+
+    <style>
+      #web .web__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 80px;
+        gap: 0 30px
+      }
+
+      #web .web__item {
+        min-width: 120px;
+        margin: 0;
+        padding: 45px 10px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        text-align: center;
+        background-image: url('./pictures/favorites-shadow.bg.svg');
+        background-repeat: no-repeat;
+        background-position: right 10px top 50%;
+        background-size: 50px;
+        -webkit-mask: url('./pictures/favorites.mask.svg');
+        mask: url('./pictures/favorites.mask.svg');
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-position: 50% 0;
+        mask-position: 50% 0;
+        box-sizing: border-box;
+      }
+
+      #web .web__list--html {
+        background-color: #ff5722;
+      }
+
+      #web .web__list--css {
+        background-color: #2196f3;
+      }
+
+      #web .web__list--js {
+        background-color: #ffe100;
+      }
+
+      #web .web__item::before {
+        display: none;
+      }
+
+      #web .web__ps {
+        line-height: 0;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="sugar">
+    <h2 class="sugar__title">Sugar 🍭</h2>
+    <ul class="sugar__list next">
+      <li class="sugar__item">
+        <h3 class="sugar__item-title sugar__item-title--sass">SASS</h3>
+        <pre class="sugar__item-code">
+          <code>.title { </code>
+          <code>  font-size: 14px; </code>
+          <code> </code>
+          <code> <mark>&--red</mark> { </code>
+          <code>  } </code>
+          <code>} </code>
+        </pre>
+      </li>
+      <li class="sugar__item next">
+        <h3 class="sugar__item-title sugar__item-title--ts">TS</h3>
+        <pre class="sugar__item-code">
+            <code>const sealed = (constructor: Function) => {</code>
+            <code>  Object.seal(constructor);</code>
+            <code>}</code>
+            <code> </code>
+            <code><mark>@sealed</mark></code>
+            <code>class BugReport {} </code>
+          </pre>
+        </pre>
+      </li>
+      <li class="sugar__item next">
+        <h3 class="sugar__item-title sugar__item-title--css">CSS</h3>
+        <pre class="sugar__item-code">
+          <code>.title { </code>
+          <code>  font-size: 14px; </code>
+          <code>} </code>
+          <code> </code>
+          <code>.title--red { </code>
+          <code>   color: red; </code>
+          <code>} </code>
+        </pre>
+      </li>
+      <li class="sugar__item next">
+        <h3 class="sugar__item-title sugar__item-title--js">JS</h3>
+        <pre class="sugar__item-code">
+          <code>var __decorate = (this && this.__decorate) || function(...</code>
+          <code>  var c = arguments.length, r = c < 3 ? target : desc...</code>
+          <code><span class="comment">  // 🩸☠️🩸</span></code>
+          <code>};</code>
+          <code>BugReport = __decorate([ </code>
+          <code>    sealed </code>
+          <code>], BugReport);</code>
+        </pre>
+      </li>
+    </ul>
+
+    <style>
+      #sugar .sugar__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+      }
+
+      #sugar .sugar__item::before {
+        display: none;
+      }
+
+      #sugar .sugar__item-title {
+        margin: 0 0 10px;
+        font-size: 15px;
+        line-height: 1;
+      }
+
+      #sugar .sugar__item-title--sass {
+        color: #d75893;
+      }
+
+      #sugar .sugar__item-title--ts {
+        color: #3178c6;
+      }
+
+      #sugar .sugar__item-title--css {
+        color: #2196f3;
+      }
+
+      #sugar .sugar__item-title--js {
+        color: #ffe100;
+      }
+
+      #sugar .sugar__item-code {
+        font-size: 11px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="not-same">
+    <h2 class="not-same__title">Same but Different 🌗</h2>
+    <ul class="not-same__list next">
+      <li class="not-same__item">
+        <h3 class="not-same__item-title not-same__item-title--react">Rect</h3>
+        <pre class="not-same__item-code">
+          <code>const [count, setCount] = <mark>useState</mark>(0);</code>
+          <code> </code>
+          <code><mark>useEffect</mark>(() => {</code>
+          <code>  setCount(count + 1)</code>
+          <code>});</code>
+        </pre>
+      </li>
+      <li class="not-same__item next">
+        <h3 class="not-same__item-title not-same__item-title--solid">Solid</h3>
+        <pre class="not-same__item-code">
+          <code>const [count, setCount] = <mark>createSignal</mark>(0);</code>
+          <code> </code>
+          <code><mark>createEffect</mark>(() => {</code>
+          <code>  console.log("The count is now", count());</code>
+          <code>});</code>
+        </pre>
+      </li>
+      <li class="not-same__item next">
+        <h3 class="not-same__item-title not-same__item-title--angular">Angular</h3>
+        <pre class="not-same__item-code">
+          <code>&lt;img <mark>src="{{itemImageUrl}}"</mark> <mark>[style.display]="displayNone"</mark>&gt;</code>
+          <code> </code>
+          <code>&lt;span&gt;</code>
+          <code>  <mark>{{ item.name }}</mark></code>
+          <code>&lt;/span&gt;</code>
+          <code> </code>
+          <code>&lt;button <mark>(click)="delete()"</mark>&gt;Delete&lt;/button&gt;</code>
+        </pre>
+      </li>
+      <li class="not-same__item next">
+        <h3 class="not-same__item-title not-same__item-title--lit">Lit</h3>
+        <pre class="not-same__item-code">
+          <code><mark>@customElement('bsacast-player')</mark></code>
+          <code>class BsaCastPlayer extends LitElement {</code>
+          <code>  static styles = <mark>css</mark>`</code>
+          <code>    p {</code>
+          <code>      color: green;</code>
+          <code>   }</code>
+          <code>  `;</code>
+          <code>}</code>
+        </pre>
+      </li>
+    </ul>
+
+    <style>
+      #not-same .not-same__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      #not-same .not-same__item::before {
+        display: none;
+      }
+
+      #not-same .not-same__item-title {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+        margin: 0 0 5px;
+        font-size: 15px;
+        line-height: 1;
+      }
+
+      #not-same .not-same__item-title::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      #not-same .not-same__item-title--react {
+        color: #61DAFB;
+      }
+
+      #not-same .not-same__item-title--react::before {
+        background-image: url('./pictures/react-logo.svg');
+      }
+
+      #not-same .not-same__item-title--solid {
+        color: #76b3e1;
+      }
+
+      #not-same .not-same__item-title--solid::before {
+        background-image: url('./pictures/solid-logo.svg');
+      }
+
+      #not-same .not-same__item-title--angular {
+        color: #DD0031;
+      }
+
+      #not-same .not-same__item-title--angular::before {
+        background-image: url('./pictures/angular-logo.svg');
+      }
+
+      #not-same .not-same__item-title--lit {
+        color: #00e8ff;
+      }
+
+      #not-same .not-same__item-title--lit::before {
+        background-image: url('./pictures/lit-logo.svg');
+      }
+
+      #not-same .not-same__item-code {
+        font-size: 11px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="pro">
+    <h2 class="pro__title">Pro 🥋</h2>
+    <ul class="pro__list next">
+      <li class="pro__item">
+        🔎 💼
+      </li>
+      <li class="pro__item next">
+        ⏱ 🧑‍💻
+      </li>
+    </ul>
+
+    <style>
+      #pro .pro__list {
+        margin: 80px 0 0;
+      }
+
+      #pro .pro__item::before {
+        display: none;
+      }
+
+      #pro .pro__item {
+        text-align: center;
+        font-size: 50px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="books">
+    <h2 class="books__title">Guide: How to read books about frameworks</h2>
+    <ul class="books__list next">
+      <li class="books__item">Go to the site with books about frameworks (Ex. <a class="clean__link" href="https://www.manning.com/" target="_blank" rel="noreferrer">manning.com</a>)</li>
+      <li class="books__item next">Find a book on the technology you are interested in</li>
+      <li class="books__item next">If the status is "in progress", <b>then read</b></li>
+      <li class="books__item next">Otherwise (99.10%), <b>forget</b> about this book</li>
+      <li class="books__item next">
+        <a class="clean__link" href="https://livebook.manning.com/" target="_blank" rel="noreferrer">
+          liveBook
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide slide--bsa" id="clean">
+    <h2 class="clean__title">Clean World 🌌</h2>
+    <ul class="clean__list next">
+      <li class="clean__item">
+        <a class="clean__link" href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" rel="noreferrer">
+          Clean Code 🦟
+        </a>
+      </li>
+      <li class="clean__item next">
+        <a class="clean__link" href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073" target="_blank" rel="noreferrer">
+          Clean Coder 🕷
+        </a>
+      </li>
+      <li class="clean__item next">
+        <a class="clean__link" href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164" target="_blank" rel="noreferrer">
+          Clean Architecture 🐝
+        </a>
+      </li>
+      <li class="clean__item next">
+        <a class="clean__link" href="https://www.amazon.com/Clean-Agile-Basics-Robert-Martin/dp/0135781868" target="_blank" rel="noreferrer">
+          Clean Agile 🐜
+        </a>
+      </li>
+      <li class="clean__item next">
+        <a class="clean__link" href="https://www.amazon.com/Clean-Craftsmanship-Disciplines-Standards-Ethics/dp/013691571X" target="_blank" rel="noreferrer">
+          Clean Craftsmanship 🦋
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide slide--bsa" id="design">
+    <h2 class="design__title">Design principles 🧬</h2>
+    <ul class="design__list next">
+      <li class="design__item">DRY 🏜️</li>
+      <li class="design__item next">KISS 💋</li>
+      <li class="design__item next">SOLID 🪨</li>
+      <li class="design__item next">DIE 🪦</li>
+      <li class="design__item next">YAGNI 🙉</li>
+    </ul>
+
+    <style>
+      #design .design__title {
+        margin-bottom: 80px;
+      }
+
+      #design .design__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #design .design__item::before {
+        display: none;
+      }
+
+      #design .design__item:nth-child(odd) {
+        transform: translateX(80px) rotate(10deg);
+      }
+
+      #design .design__item:nth-child(even) {
+        transform: translateX(-80px) rotate(-10deg);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="history-back">
+    <h2 class="history-back__title">Let's back to the story...</h2>
+
+    <style>
+      #history-back .history-back__title {
+        margin: 200px 0 0;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="story-finally-pick">
+    <img class="story-finally-pick__img cover" src="./pictures/ash-finally-pick.png" alt="Pokemons">
+    <img class="story-finally-pick__pokemon story-finally-pick__pokemon--pikachu next" width="250" src="./pictures/pikachu.png" alt="Pikachu">
+    <style>
+      #story-finally-pick .story-finally-pick__img {
+        transform: translate(-50%, -50%) scale(1.35);
+      }
+
+      #story-finally-pick .story-finally-pick__pokemon {
+        position: absolute;
+      }
+
+      #story-finally-pick .story-finally-pick__pokemon--pikachu {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 140px;
+      }
+    </style>
+  </section>
+
   <section class="slide slide--bsa" id="story-pain">
     <img class="story-pain__img cover" src="./pictures/ash-pain.png" alt="Pokemons">
     <style>
@@ -226,6 +737,164 @@
     <style>
       #story-catch .story-catch__img {
         transform: translate(-50%, -50%) scale(2.2);
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="final-choice-pokemon">
+    <h2 class="final-choice-pokemon__title">Final Choice 🎬</h2>
+    <ul class="final-choice-pokemon__list next">
+      <li class="final-choice-pokemon__item final-choice-pokemon__item--charmander">
+        <p class="final-choice-pokemon__item-wrapper"></p>
+      </li>
+      <li class="final-choice-pokemon__item final-choice-pokemon__item--pikachu next">
+        <p class="final-choice-pokemon__item-wrapper"></p>
+      </li>
+      <li class="final-choice-pokemon__item final-choice-pokemon__item--bulbasaur">
+        <p class="final-choice-pokemon__item-wrapper"></p>
+      </li>
+      <li class="final-choice-pokemon__item final-choice-pokemon__item--squirtle">
+        <p class="final-choice-pokemon__item-wrapper"></p>
+      </li>
+    </ul>
+
+    <style>
+      #final-choice-pokemon .final-choice-pokemon__title {
+        margin-bottom: 10px;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px 10px;
+        margin: 0;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item::before {
+        display: none;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item {
+        width: 100%;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item--bulbasaur,
+      #final-choice-pokemon .final-choice-pokemon__item--squirtle {
+        width: 30%;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item-wrapper {
+        width: 110px;
+        height: 90px;
+        margin: 0 auto;
+        border: 2px dashed #000000;
+        border-radius: 25px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 60%;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item--charmander .final-choice-pokemon__item-wrapper {
+        background-image: url('./pictures/charmander.svg');
+        border-color: #CF7100;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item--pikachu .final-choice-pokemon__item-wrapper {
+        width: 150px;
+        height: 130px;
+        background-image: url('./pictures/pikachu.svg');
+        border-width: 4px;
+        border-color: #FFE100;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item--bulbasaur .final-choice-pokemon__item-wrapper {
+        background-image: url('./pictures/bulbasaur.svg');
+        border-color: #68AE28;
+      }
+
+      #final-choice-pokemon .final-choice-pokemon__item--squirtle .final-choice-pokemon__item-wrapper {
+        background-image: url('./pictures/squirtle.svg');
+        border-color: #92A8F7;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--bsa" id="final-choice-framework">
+    <h2 class="final-choice-framework__title">Final Choice 🎬</h2>
+    <ul class="final-choice-framework__list">
+      <li class="final-choice-framework__item final-choice-framework__item--angular">
+        <p class="final-choice-framework__item-wrapper"></p>
+      </li>
+      <li class="final-choice-framework__item final-choice-framework__item--js">
+        <p class="final-choice-framework__item-wrapper"></p>
+      </li>
+      <li class="final-choice-framework__item final-choice-framework__item--vue">
+        <p class="final-choice-framework__item-wrapper"></p>
+      </li>
+      <li class="final-choice-framework__item final-choice-framework__item--react">
+        <p class="final-choice-framework__item-wrapper"></p>
+      </li>
+    </ul>
+
+    <style>
+      #final-choice-framework .final-choice-framework__title {
+        margin-bottom: 10px;
+      }
+
+      #final-choice-framework .final-choice-framework__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px 10px;
+        margin: 0;
+      }
+
+      #final-choice-framework .final-choice-framework__item::before {
+        display: none;
+      }
+
+      #final-choice-framework .final-choice-framework__item {
+        width: 100%;
+      }
+
+      #final-choice-framework .final-choice-framework__item--vue,
+      #final-choice-framework .final-choice-framework__item--react {
+        width: 30%;
+      }
+
+      #final-choice-framework .final-choice-framework__item-wrapper {
+        width: 110px;
+        height: 90px;
+        margin: 0 auto;
+        border: 2px dashed #000000;
+        border-radius: 25px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 60%;
+      }
+
+      #final-choice-framework .final-choice-framework__item--angular .final-choice-framework__item-wrapper {
+        background-image: url('./pictures/angular-logo.svg');
+        border-color: #DD0031;
+      }
+
+      #final-choice-framework .final-choice-framework__item--js .final-choice-framework__item-wrapper {
+        width: 150px;
+        height: 130px;
+        background-image: url('./pictures/js-logo.svg');
+        border-width: 4px;
+        border-color: #f7df1e;
+      }
+
+      #final-choice-framework .final-choice-framework__item--vue .final-choice-framework__item-wrapper {
+        background-image: url('./pictures/vue-logo.svg');
+        border-color: #41b883;
+      }
+
+      #final-choice-framework .final-choice-framework__item--react .final-choice-framework__item-wrapper {
+        background-image: url('./pictures/react-logo.svg');
+        border-color: #61DAFB;
       }
     </style>
   </section>
