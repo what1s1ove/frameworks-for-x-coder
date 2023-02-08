@@ -10,11 +10,11 @@
       --slide-ratio: calc(16 / 9);
     }
 
-    .slide--bsa {
-      background-image: url(./pictures/binary-studio-logo.svg), url(./pictures/binary-studio-academy-logo.svg);
+    .slide--brand {
+      background-image: url(./pictures/brand.svg);
       background-repeat: no-repeat;
-      background-position: right 20px bottom 25px, left 20px bottom 15px;
-      background-size: 75px, 50px;
+      background-position: right 20px bottom 25px;
+      background-size: 45px;
     }
 
     .bottom-link {
@@ -29,14 +29,12 @@
 <body class="shower list">
 
   <header class="caption">
-    <h1>Binary Studio Academy</h1>
-    <p>Frameworks for X-coder</p>
+    <h1>Frameworks for X-coder</h1>
   </header>
 
   <section class="slide" id="cover">
-    <h2 class="cover__title">Binary Studio Academy</h2>
-    <h3 class="cover__subtitle">Frameworks for X-coder</h3>
-    <p class="cover__desc">🔴 🟢 🔵</p>
+    <h2 class="cover__title">Frameworks for X-coder</h2>
+    <h3 class="cover__subtitle">🔴 🟢 🔵</h3>
     <p class="copyright right">
       <a href="https://whatislove.dev/" target="_blank" rel="noreferrer">© Vladyslav Zubko</a>
     </p>
@@ -51,7 +49,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bs" id="hello">
+  <section class="slide slide--brand" id="hello">
     <img src="pictures/lapka.svg" width="300" height="300" alt="Lapka">
 
     <style>
@@ -62,68 +60,7 @@
     </style>
   </section>
 
-  <section class="slide" id="who">
-    <h2 class="who__title">Positions</h2>
-    <ul class="who__list">
-      <li class="who__item who__item--full">
-        <a class="who__link" href="https://binary-studio.com/" target="_blank" rel="noreferrer">
-          <img src="pictures/binary-studio-logo.svg" width="300" alt="Binary Studio Logo">
-        </a>
-        Front-End Developer
-      </li>
-      <li class="who__item who__item--half">
-        <a class="who__link" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer">
-          <img src="pictures/htmlacademy-logo.svg" width="70" alt="HTML Academy Logo">
-        </a>
-        Mentor / Captain / Interviewer / Author
-      </li>
-      <li class="who__item who__item--half">
-        <a class="who__link" href="https://ligaa.agency/" target="_blank" rel="noreferrer">
-          <img src="pictures/liga-a-logo.svg" width="70" alt="Liga A Logo">
-        </a>
-        Head Mentor
-      </li>
-    </ul>
-    <style>
-      #who .who__title {
-        margin-bottom: 50px;
-      }
-
-      #who .who__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px 0;
-      }
-
-      #who .who__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-      }
-
-      #who .who__item--full {
-        width: 100%;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      #who .who__item--half {
-        width: 50%;
-        font-size: 13px;
-      }
-
-      #who .who__item::before {
-        display: none;
-      }
-
-      #who .who__link {
-        background-image: none;
-      }
-    </style>
-  </section>
-
-  <section class="slide slide--bsa" id="disclaimer">
+  <section class="slide slide--brand" id="disclaimer">
     <h2 class="disclaimer__title">Disclaimer ⚠️</h2>
     <p class="disclaimer__desc next">
       Examples will use JS, but this approach is <i>applicable</i>* to any language.
@@ -136,7 +73,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="start">
+  <section class="slide slide--brand" id="start">
     <h2 class="start__title">Let's start with a story...</h2>
 
     <style>
@@ -146,7 +83,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="story">
+  <section class="slide slide--brand" id="story">
     <img class="story__img cover" src="./pictures/ash.png" alt="Ash">
     <style>
       #story .story__img {
@@ -155,7 +92,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="story-pick">
+  <section class="slide slide--brand" id="story-pick">
     <img class="story-pick__img cover" src="./pictures/ash-pick.png" alt="Pokemons">
     <img class="story-pick__pokemon story-pick__pokemon--charmander next" width="250" src="./pictures/charmander.png" alt="Charmander">
     <img class="story-pick__pokemon story-pick__pokemon--bulbasaur next" width="220" src="./pictures/bulbasaur.png" alt="Bulbasaur">
@@ -187,7 +124,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="starters">
+  <section class="slide slide--brand" id="starters">
     <h2 class="starters__title">Beginners ask</h2>
     <p class="starters__text next">🧑‍🎓 Which framework do you recommend for a beginner, <b class="starters__technology starters__technology--react">React</b> or <b class="starters__technology starters__technology--vue">Vue</b>?</p>
     <p class="starters__text next">🧑‍💻 <s><b class="starters__technology starters__technology--react">Rea...</b></s> No one. Learn the basics of the language you are interested in.</p>
@@ -203,7 +140,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="framework-choose">
+  <section class="slide slide--brand" id="framework-choose">
     <h2 class="framework-choose__title">Choice of technology today</h2>
     <div class="framework-choose__wrapper next">
       <img src="./pictures/user.svg" width="100" alt="Person">
@@ -261,7 +198,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="framework-advantages">
+  <section class="slide slide--brand" id="framework-advantages">
     <h2 class="framework-advantages__title">Framework-X Advantages</h2>
     <ul class="framework-advantages__list next">
       <li class="framework-advantages__item">Super fast</li>
@@ -276,7 +213,7 @@
     </ul>
   </section>
 
-  <section class="slide slide--bsa" id="trash">
+  <section class="slide slide--brand" id="trash">
     <img class="trash__img cover" src="./pictures/clean.jpeg" alt="">
     <img class="trash__logo trash__logo--backbone next" src="./pictures/backbonejs-logo.svg" width="300" alt="backbone logo">
     <img class="trash__logo trash__logo--jquery next" src="./pictures/jquery-logo.svg" width="300" alt="jquery logo">
@@ -302,7 +239,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="web">
+  <section class="slide slide--brand" id="web">
     <h2 class="web__title">Web 🌐</h2>
     <ul class="web__list next">
       <li class="web__item web__list--html">HTML</li>
@@ -369,7 +306,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="sugar">
+  <section class="slide slide--brand" id="sugar">
     <h2 class="sugar__title">Sugar 🍭</h2>
     <ul class="sugar__list next">
       <li class="sugar__item">
@@ -461,7 +398,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="not-same">
+  <section class="slide slide--brand" id="not-same">
     <h2 class="not-same__title">Same but Different 🌗</h2>
     <ul class="not-same__list next">
       <li class="not-same__item">
@@ -577,7 +514,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="pro">
+  <section class="slide slide--brand" id="pro">
     <h2 class="pro__title">Pro 🥋</h2>
     <ul class="pro__list next">
       <li class="pro__item">
@@ -604,7 +541,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="books">
+  <section class="slide slide--brand" id="books">
     <h2 class="books__title">Guide: How to read books about frameworks</h2>
     <ul class="books__list next">
       <li class="books__item">Go to the site with books about frameworks (Ex. <a class="clean__link" href="https://www.manning.com/" target="_blank" rel="noreferrer">manning.com</a>)</li>
@@ -619,7 +556,7 @@
     </ul>
   </section>
 
-  <section class="slide slide--bsa" id="clean">
+  <section class="slide slide--brand" id="clean">
     <h2 class="clean__title">Clean World 🌌</h2>
     <ul class="clean__list next">
       <li class="clean__item">
@@ -650,7 +587,7 @@
     </ul>
   </section>
 
-  <section class="slide slide--bsa" id="design">
+  <section class="slide slide--brand" id="design">
     <h2 class="design__title">Design principles 🧬</h2>
     <ul class="design__list next">
       <li class="design__item">DRY 🏜️</li>
@@ -685,7 +622,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="history-back">
+  <section class="slide slide--brand" id="history-back">
     <h2 class="history-back__title">Let's back to the story...</h2>
 
     <style>
@@ -695,7 +632,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="story-finally-pick">
+  <section class="slide slide--brand" id="story-finally-pick">
     <img class="story-finally-pick__img cover" src="./pictures/ash-finally-pick.png" alt="Pokemons">
     <img class="story-finally-pick__pokemon story-finally-pick__pokemon--pikachu next" width="250" src="./pictures/pikachu.png" alt="Pikachu">
     <style>
@@ -715,7 +652,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="story-pain">
+  <section class="slide slide--brand" id="story-pain">
     <img class="story-pain__img cover" src="./pictures/ash-pain.png" alt="Pokemons">
     <style>
       #story-pain .story-pain__img {
@@ -724,7 +661,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="story-happy">
+  <section class="slide slide--brand" id="story-happy">
     <img class="story-happy__img cover" src="./pictures/ash-happy.jpg" alt="Pokemons">
     <style>
       #story-happy .story-happy__img {
@@ -733,7 +670,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="story-catch">
+  <section class="slide slide--brand" id="story-catch">
     <img class="story-catch__img cover" src="./pictures/ash-catch.png" alt="Pokemons">
     <style>
       #story-catch .story-catch__img {
@@ -742,7 +679,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="final-choice-pokemon">
+  <section class="slide slide--brand" id="final-choice-pokemon">
     <h2 class="final-choice-pokemon__title">Final Choice 🎬</h2>
     <ul class="final-choice-pokemon__list next">
       <li class="final-choice-pokemon__item final-choice-pokemon__item--charmander">
@@ -821,7 +758,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="final-choice-framework">
+  <section class="slide slide--brand" id="final-choice-framework">
     <h2 class="final-choice-framework__title">Final Choice 🎬</h2>
     <ul class="final-choice-framework__list">
       <li class="final-choice-framework__item final-choice-framework__item--angular">
@@ -900,7 +837,7 @@
     </style>
   </section>
 
-  <section class="slide slide--bsa" id="thanks">
+  <section class="slide slide--brand" id="thanks">
     <h2>Thanks 🍋</h2>
     <style>
       #thanks {
