@@ -24,6 +24,19 @@
         transform: translateX(-50%);
         font-size: 13px;
       }
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        border: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+      }
   </style>
 </head>
 <body class="shower list">
@@ -912,6 +925,20 @@
       #thanks {
         display: grid;
         place-content: center;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide--brand" id="sponsor">
+    <h2 class="visually-hidden">Sponsor</h2>
+    <img src="pictures/whatislove-academy.svg" width="350" alt="whatisloveacademy">
+    <a class="bottom-link" href="https://t.me/whatislove_dev" target="_blank" rel="noreferrer">https://t.me/whatislove_dev</a>
+
+    <style>
+      #sponsor {
+        display: grid;
+        justify-content: center;
+        padding: 200px 0 0;
       }
     </style>
   </section>
